@@ -22,3 +22,14 @@
  * element.addEventListener('event name', callback function, false(default))
  * 
  */
+
+//approach 04 - attachEvent()
+//approach 05 - jQuery - onEventListener
+
+// browser events and environments event
+/**
+ * todo: event types, timestamp, defaultPrevented, 
+ * todo: target, toElement, srcElement, currentTarget, 
+ * todo: clientX, clientY, offset, screenX, screenY, 
+ * todo: altKey, ctrlKey, shiftKey, keyCode
+ */
