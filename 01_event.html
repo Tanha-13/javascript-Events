@@ -22,7 +22,7 @@
             width="200px"
             id="japan"
             src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
+            alt="Japan"
           />
         </li>
         <li>
@@ -30,7 +30,7 @@
             width="200px"
             id="river"
             src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
+            alt="River"
           />
         </li>
         <li>
@@ -38,7 +38,7 @@
             width="200px"
             id="owl"
             src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
+            alt="Owl"
           />
         </li>
         <li>
@@ -46,10 +46,30 @@
             width="200px"
             id="prayer"
             src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-            alt=""
+            alt="Prayer"
           />
+        </li>
+        <li>
+          <a href="https://google.com" id="google">Google</a>
         </li>
       </ul>
     </div>
+
+
+    <script>
+      //approach 02
+    //   document.getElementById("owl").onclick = function(){
+    //     alert('owl click');
+    //   }
+
+    //approach 03
+    document.getElementById("owl").addEventListener('click', () => {
+        alert('owl clicked again');
+    }, false);
+
+    //approach 04 - attachEvent()
+    //approach 05 - jQuery - onEventListener
+    
+    </script>
   </body>
 </html>
