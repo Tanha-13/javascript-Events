@@ -63,13 +63,19 @@
     //   }
 
     //approach 03
-    document.getElementById("owl").addEventListener('click', (event) => {
-        console.log(event);
+    // document.getElementById("owl").addEventListener('click', function(){
+    //     alert('owl clicked again')
+    // })
+
+    // event bubbling - images, li, ul  and event capturing - ul, li, images
+    document.getElementById("images").addEventListener('click', (event) => {
+        console.log("clicked inside the ul");
     }, false);
 
-
-    
-    
+    document.getElementById("owl").addEventListener('click', (event) => {
+        console.log("owl clicked");
+        event.stopPropagation(); // it will stop the bubbling
+    }, false);
 
     </script>
   </body>

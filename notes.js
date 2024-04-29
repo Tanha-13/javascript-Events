@@ -33,3 +33,11 @@
  * todo: clientX, clientY, offset, screenX, screenY, 
  * todo: altKey, ctrlKey, shiftKey, keyCode
  */
+
+//topic: event propagation
+/**
+ * depends on use case
+ * 01. event bubbling - false ( third parameter(default)). from bottom to top
+ * 02. event capturing - true (third parameter). from top to bottom
+ * 
+ */
