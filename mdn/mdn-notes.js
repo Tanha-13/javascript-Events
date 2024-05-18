@@ -18,6 +18,15 @@
  * Event handlers and event listeners are pretty much interchangeable. But they are not similar. Event listener listen out for the event happening, and the handler is the code that is run in response to it happening.
  */
 
+// topic: addEventListener()
+/**
+ * html objects that can fire events have an addEventListener() method and this is recommended mechanism for adding event handlers.
+ * first parameter - events: indicates that which event to listen.
+ * second parameter - function: a function to call when the event happens. 
+ * 
+ */
+// topic: focus and blur
+
 
 
 
