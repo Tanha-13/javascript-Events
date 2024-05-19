@@ -42,5 +42,16 @@
  * event object have a standard set of properties and methods available.
  */
 
+//topic: Event Bubbling and event capture
+/**
+ * it describes how the browsers handles events targeted at nested elements.
+ * todo: target vs currentTarget
+ * 
+ * event.stopPropagation()
+ * event capture is reversed form of event bubbling. Event capture is disabled by default. To enable it , use {capture: true}
+ * 
+ * By default almost all event handlers are registered in the bubbling phase.
+ */
+
 //imp: adding event handlers in three ways - using inline event handler attribute, using event handlers properties and using addEventListener().
 // Event reference - https://developer.mozilla.org/en-US/docs/Web/Events
