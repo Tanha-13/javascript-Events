@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+
+    <style>
+        .tile{
+            height: 200px;
+            width: 25%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </div>
+
+
+    <script>
+        function randomNumber(){
+            return Math.floor(Math.random()*256);
+        }
+        function bgColor(){
+            const color = `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
+            return color;
+        }
+        const container = document.getElementById("container");
+        container.addEventListener("click", (e) => {
+            e.target.style.backgroundColor = bgColor();
+        })
+
+    </script>
+</body>
+</html>
