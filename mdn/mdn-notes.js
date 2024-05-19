@@ -20,16 +20,22 @@
 
 // topic: addEventListener()
 /**
- * html objects that can fire events have an addEventListener() method and this is recommended mechanism for adding event handlers.
+ * html objects that can fire events have an addEventListener() method and this is recommended mechanism for adding/registering event handlers.
  * first parameter - events: indicates that which event to listen.
  * second parameter - function: a function to call when the event happens. 
  * 
+ *  i. to remove a eventListener, removeEventListener() method is used.
+ * ii. 
+ * 
+ * addEventListener() vs event handler properties like onclick
+ *  i. multiple handler can be added in a single event using addEventListener method whereas using properties for events, the earlier handlers will be overwrite.
+ * 
+ * problem: You should never use the HTML event handler properties because they quickly become unmanageable, outdated and inefficient and using them is a bad practice. Mixing HTML and javascript makes it hard to read. Keeping js code separate is a good practice. Many common server configurations will disallow inline JavaScript.
  */
 // topic: focus and blur
 
 
+//topic: 
 
-
-
-
+//imp: adding event handlers in three ways - using inline event handler attribute, using event handlers properties and using addEventListener().
 // Event reference - https://developer.mozilla.org/en-US/docs/Web/Events

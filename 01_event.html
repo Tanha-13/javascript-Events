@@ -57,9 +57,9 @@
 
     <script>
       //approach 02
-      //   document.getElementById("owl").onclick = function(){
-      //     alert('owl click');
-      //   }
+        // document.getElementById("owl").onclick = function(){
+        //   alert('owl click');
+        // }
 
       //approach 03
       // document.getElementById("owl").addEventListener('click', function(){
@@ -83,21 +83,21 @@
       //     console.log("google clicked");
       // }, false);
 
-      document.querySelector("#images").addEventListener(
-        "click",
-        (event) => {
-          // console.log(event.target.parentNode);
-          //   console.log(event.target.tagName);
+      // document.querySelector("#images").addEventListener(
+      //   "click",
+      //   (event) => {
+      //     // console.log(event.target.parentNode);
+      //     //   console.log(event.target.tagName);
 
-          if (event.target.tagName === "IMG") {
-            console.log(event.target.id);
-            let removeIt = event.target.parentNode;
-            removeIt.remove();
-            // removeIt.parentNode.removeChild(removeIt);
-          }
-        },
-        false
-      );
+      //     if (event.target.tagName === "IMG") {
+      //       console.log(event.target.id);
+      //       let removeIt = event.target.parentNode;
+      //       removeIt.remove();
+      //       // removeIt.parentNode.removeChild(removeIt);
+      //     }
+      //   },
+      //   false
+      // );
     </script>
   </body>
 </html>
