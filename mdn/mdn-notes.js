@@ -35,7 +35,12 @@
 // topic: focus and blur
 
 
-//topic: 
+//topic: event object
+/**
+ * event object is automatically passed to event handlers as a parameter to provide extra features and information. the common name of event object is e/evt/event. 
+ * the target property of the event object is always a reference to the element the event occurred upon. 
+ * event object have a standard set of properties and methods available.
+ */
 
 //imp: adding event handlers in three ways - using inline event handler attribute, using event handlers properties and using addEventListener().
 // Event reference - https://developer.mozilla.org/en-US/docs/Web/Events

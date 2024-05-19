@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevent Default Behavior</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="fname">First Name:</label>
+            <input id="fname" type="text">
+        </div>
+        <div>
+            <label for="lname">Last Name:</label>
+            <input id="lname" type="text">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <p></p>
+
+    <script>
+        const form = document.querySelector("form");
+        const firstName = document.getElementById("fname");
+        const lastName = document.getElementById("lname");
+        const errorMessage = document.querySelector("p");
+        form.addEventListener('submit', (evt) => {
+            if(firstName.value === "" || lastName.value === ""){
+                evt.preventDefault();
+                errorMessage.textContent = "You need to fill the names!";
+                errorMessage.style.color = 'red';
+            }
+        })
+    </script>
+</body>
+</html>
